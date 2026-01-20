@@ -1,0 +1,12 @@
+{
+  "name": "justin-tools",
+  "owner": {
+    "name": "Justin",
+    "email": "justin@example.com"
+  },
+  "metadata": {
+    "description": "Personal Claude Code plugins and skills",
+    "version": "1.0.0"
+  },
+  "plugins": []
+}
