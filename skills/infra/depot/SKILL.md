@@ -121,6 +121,24 @@ depot pull-token
 depot build -t myimage:tag . --token $DEPOT_TOKEN
 ```
 
+## Runpod Usage
+
+When building images for Runpod, you **must** target `linux/amd64` since Runpod runs Linux infrastructure:
+
+```bash
+# Build for Runpod (required platform flag)
+depot build -t myimage:tag . --platform linux/amd64
+
+# Build and push to registry for Runpod
+depot build -t registry.example.com/myimage:tag . --platform linux/amd64 --push
+
+# Build, save to Depot registry, then push to Runpod-compatible registry
+depot build -t myimage:tag . --platform linux/amd64 --save
+depot push myimage:tag your-registry.com/myimage:tag
+```
+
+**Important**: If you're developing on Mac (ARM), always include `--platform linux/amd64` or your images won't run on Runpod.
+
 ## Workflow Examples
 
 ### Build and Test Locally
