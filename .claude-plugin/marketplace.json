@@ -8,5 +8,18 @@
     "description": "Personal Claude Code plugins and skills",
     "version": "1.0.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "depot",
+      "source": "./skills/infra/depot",
+      "description": "Cloud-based Docker image building with caching, cross-platform support, and direct registry push",
+      "version": "1.0.0",
+      "author": {
+        "name": "Justin"
+      },
+      "category": "infra",
+      "keywords": ["depot", "docker", "build", "container", "registry", "ci-cd"],
+      "strict": false
+    }
+  ]
 }
