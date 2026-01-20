@@ -7,7 +7,7 @@ Personal collection of plugins for [Claude Code](https://docs.anthropic.com/en/d
 Add the marketplace to Claude Code:
 
 ```bash
-/plugin marketplace add justinmerrell/justin-claude-plugins
+/plugin marketplace add justinwlin/justin-claude-plugins
 ```
 
 Then install specific skills:
